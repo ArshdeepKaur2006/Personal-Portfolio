@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 76vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -20px;
+            left: -5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width:223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Arshdeep Kaur's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Arshdeep Kaur</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+              <div class="buttons">
+                <a href="myRESUME .docx" ><button class="btn">Download Resume</button></a>
+                <a href="https://github.com/ArshdeepKaur2006" ><button class="btn">Visit Github</button></a>
+              </div>
+            </div>
+            <div class="rightSection">
+                <img src="img.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> What I have done so far</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="https://images.unsplash.com/photo-1662947368770-7cf87e565cdd?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="vertical-title">
+                        Amazon Clone (HTML, CSS)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a responsive Amazon e-commerce homepage clone using HTML and CSS, replicating the original design and layout.
+Implemented a multi-section layout including a header, navigation bar, product grid, and footer.
+Focused on pixel-perfect design, responsive behavior, and clean, semantic code structure.
+Demonstrated strong front-end development skills and attention to detail in recreating a complex UI.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://images.unsplash.com/photo-1555169062-013468b47731?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJpcmR8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="vertical-title">
+                        Floopy Bird Clone (Unity, C#)
+                    </div>
+                    <div class="vertical-desc">
+                        Built a functional clone of the Flappy Bird game using Unity and C# to understand 2D game development principles.
+Implemented player controls, collision detection, scoring system, and smooth game mechanics.
+Used Unity physics engine and custom scripts to manage game logic and object spawning.
+Gained experience in game loop design, UI elements, and event-driven programming in Unity.
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    <img class="image-top" src="https://images.unsplash.com/photo-1558486012-817176f84c6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="vertical-title">
+                        Weather App (HTML, CSS, JavaScript)
+                    </div>
+                    <div class="vertical-desc">
+                        Created a dynamic weather application that fetches real-time weather data using the OpenWeatherMap API.
+Designed a clean, responsive UI with HTML and CSS for both desktop and mobile views.
+Used JavaScript to handle API requests, display temperature, humidity, wind speed, and weather icons.
+Enhanced user experience with input validation, loading states, and error handling for invalid locations.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="vertical-title">
+                        Task Manager (HTML, CSS, JavaScript)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a browser-based task manager app to create, edit, delete, and mark tasks as completed.
+Implemented local storage to persist user data across sessions without a backend.
+Designed a responsive and user-friendly UI with dynamic DOM manipulation using JavaScript.
+Focused on clean code structure, modular functions, and intuitive user experience.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="https://images.unsplash.com/photo-1579584117154-dc1214fd3fdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3VycmVuY3klMjBjb252ZXJ0b3J8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="vertical-title">
+                        Currency Converter (HTML, CSS, JavaScript)
+                    </div>
+                    <div class="vertical-desc">
+                        Built a real-time currency converter using a public exchange rate API (e.g., ExchangeRate-API or similar).
+Designed a responsive interface to select currencies and display converted values instantly.
+Used JavaScript to handle API requests, update the UI dynamically, and manage user input validation.
+Improved usability with clear design, error handling, and smooth interaction across devices.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>My Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <p>Email:kaur1231arsh@gmail.com</p>
+                <p>Contact No.:7087212730</p>
+            </div>
+            <div class="footer-third">
+                 <a href="https://www.linkedin.com/in/arshdeep-kaur-2853382a2">LinkedIn</a>
+            </div>
+            <div class="footer-fourth">
+                <a href="https://github.com/ArshdeepKaur2006">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; myportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Game Developer','Web Designer'],
+            typeSpeed: 50,
+        }); 
+        
+    </script>
+</body>
+
+</html>

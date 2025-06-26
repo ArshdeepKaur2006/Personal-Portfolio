@@ -1,0 +1,30 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.services{
+    height: 50vh;
+  width: 50vw;
+  background-color: aqua;
+  border: 2px solid black;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding:0 15px;
+  text-align: center;
+  padding-top: 60px;
+}
+h2{
+    color: red;
+}
+p{
+    color: blue;
+}
